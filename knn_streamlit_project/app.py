@@ -3,15 +3,13 @@ import pickle
 import numpy as np
 import os
 
-st.set_page_config(page_title="KNN Prediction", layout="centered")
-
-# Get absolute path of current file
+# Get current directory
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Load model and scaler safely
 model_path = os.path.join(BASE_DIR, "model.pkl")
 scaler_path = os.path.join(BASE_DIR, "scaler.pkl")
 
+# Load model and scaler
 model = pickle.load(open(model_path, "rb"))
 scaler = pickle.load(open(scaler_path, "rb"))
 

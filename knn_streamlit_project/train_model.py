@@ -5,7 +5,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.preprocessing import StandardScaler
 
 # Load dataset
-df = pd.read_csv("/home/intellect/Documents/Data_Science/knn_streamlit_project/Social_Network_Ads.csv")
+df = pd.read_csv("/home/intellect/Documents/Data_Scientist/knn_streamlit_project/Social_Network_Ads.csv")
 
 # Features and target
 X = df[['Age', 'EstimatedSalary']]
